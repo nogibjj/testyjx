@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Furniture Store</title>
+</head>
+<body>
+    <h1>Welcome to the Furniture Store</h1>
+    <% furnitures.forEach(furniture => { %>
+        <div>
+            <img src="<%= furniture.image %>" alt="<%= furniture.name %>">
+            <h2><%= furniture.name %></h2>
+            <p><%= furniture.description %></p>
+            <p>Price: $<%= furniture.price %></p>
+        </div>
+    <% }); %>
+</body>
+</html>
